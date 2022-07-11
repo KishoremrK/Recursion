@@ -5,10 +5,23 @@
 //  Created by Kishore Venkatesh on 11/07/22.
 //
 
-#include <iostream>
+#include<iostream>
+#include<stdio.h>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
+void recursion(int n)
+{
+    if(n>0)
+    {
+        cout<<n;
+        recursion(n-1);
+        
+    }
+}
+
+int main() {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    int x=3;
+    recursion(x);
     return 0;
 }
